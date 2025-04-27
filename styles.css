@@ -1,0 +1,106 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #ffe6f0, #ffe6fa);
+    color: #4a4a4a;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  
+  h1 {
+    color: #d63384;
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+  
+  header p {
+    color: #a34473;
+    font-size: 1em;
+  }
+  
+  /* Sections */
+  section {
+    /* background-color: #c97194; */
+    background-color: #c98ba3;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(255, 182, 193, 0.3);
+  }
+  
+  /* Labels & Inputs */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #a03b73;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffb6c1;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #5e5e5e;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .symptoms label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  
+  /* Notes Section */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Button */
+  button {
+    background-color: #9e345e;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+  }
+  
+  button:hover {
+    background-color: #e05594;
+    transform: translateY(-1px);
+  }
+  
+ 
+  
+  

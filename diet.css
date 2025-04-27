@@ -1,0 +1,136 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff7f0;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    display: block;
+  }
+  
+
+.meal-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Layout Structure */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Left main content area */
+.main-content {
+  flex: 3;
+  min-width: 300px;
+}
+
+/* Right sidebar */
+.sidebar {
+  flex: 1;
+  min-width: 250px;
+  background-color: #ffe7d1;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Text */
+header h1 {
+  margin: 20px 0 10px;
+  font-size: 2rem;
+  color: #d35400;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Sections (e.g., Breakfast, Dinner) */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Sidebar sections */
+.sidebar section {
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  color: #6d4c41;
+}
+
+/* Quote in sidebar */
+blockquote {
+  font-style: italic;
+  background-color: #fffaf4;
+  padding: 12px 16px;
+  border-left: 4px solid #ffa07a;
+  border-radius: 10px;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+  }
+}
+
+/* Centered Sidebar Sections (Reminder & Quote) */
+.sidebar section.centered {
+  text-align: center;
+}
+
+/* Centered Quote */
+.sidebar blockquote {
+  font-style: italic;
+  background-color: #fffaf4;
+  padding: 12px 16px;
+  border-left: none; /* Remove left border */
+  border-radius: 10px;
+  color: #444;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 90%;
+  text-align: center;
+}
+

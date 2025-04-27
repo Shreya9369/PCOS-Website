@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PCOS Symptom Tracker</title>
+  <link rel="stylesheet" href="styles.css" /> <!-- Assuming your CSS is in styles.css -->
+</head>
+<body>
+  <form id="symptom-form">
+    <header>
+      <h1>PCOS Symptom Tracker</h1>
+      <p>Track and manage your daily symptoms effectively</p>
+    </header>
+
+    <section class="user-info">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="Enter your age" required />
+    </section>
+
+    <section class="date-section">
+      <label for="date">Date:</label>
+      <input type="date" id="date" required />
+    </section>
+
+    <section class="symptoms">
+      <h2>Today's Symptoms</h2>
+
+      <label><input type="checkbox" value="Irregular periods" /> Irregular periods</label>
+      <label><input type="checkbox" value="Acne" /> Acne</label>
+      <label><input type="checkbox" value="Hair fall" /> Hair fall</label>
+      <label><input type="checkbox" value="Weight gain" /> Weight gain</label>
+      <label><input type="checkbox" value="Mood swings" /> Mood swings</label>
+      <label><input type="checkbox" value="Fatigue" /> Fatigue</label>
+      <label><input type="checkbox" value="Sleep disturbances" /> Sleep disturbances</label>
+    </section>
+
+    <section class="notes">
+      <label for="notes">Additional Notes:</label>
+      <textarea id="notes" rows="4" placeholder="Write anything you noticed today..."></textarea>
+    </section>
+
+    <button type="submit">Save Entry</button>
+  </form>
+
+
+
+  <!-- SideBar -->
+   
+<script src="app.js"></script>
+</body>
+</html>
+

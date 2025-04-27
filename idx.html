@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Doc</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <img src="MyLogo.png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+
+        <li><a href="#">Home</a></li>
+        <li><a href="#" onclick="openModal()">About</a></li>
+        <li><a href="#" onclick="openServicesModal()">Services</a></li>
+        <li><a href="#" onclick="scrollToContact()">Contact Us</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <!--About -->
+  
+<!-- About Modal -->
+<!-- <div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Empowering Your Health Journey</h2>
+    <p>Welcome to the PCOS Support Hub! This website is dedicated to helping women who are navigating the challenges of PCOS (Polycystic Ovary Syndrome). As someone who personally understands the struggles of living with PCOS, I created this space to offer support, guidance, and resources to empower women in their health journeys.
+
+      Here, you’ll find information on managing symptoms, treatment options, lifestyle changes, and tips for emotional well-being. It’s my hope that this website becomes a place of comfort, education, and strength for women with PCOS, helping them feel informed and supported every step of the way.
+      
+      You are not alone, and together, we can work towards a healthier and happier life with PCOS.
+      
+      Remember, every step you take is a step towards strength, and you are worthy of feeling your best, no matter the challenges you face. We're in this together. &hearts;</p>
+  </div>
+</div> -->
+
+<!-- ABOUT MODAL -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Empowering Your Health Journey</h2>
+    <p>Welcome to the PCOS Support Hub! This website is dedicated to helping women who are navigating the challenges of PCOS (Polycystic Ovary Syndrome). As someone who personally understands the struggles of living with PCOS, I created this space to offer support, guidance, and resources to empower women in their health journeys.
+
+      Here, you’ll find information on managing symptoms, treatment options, lifestyle changes, and tips for emotional well-being. It’s my hope that this website becomes a place of comfort, education, and strength for women with PCOS, helping them feel informed and supported every step of the way.
+      
+      You are not alone, and together, we can work towards a healthier and happier life with PCOS.
+      
+      Remember, every step you take is a step towards strength, and you are worthy of feeling your best, no matter the challenges you face. We're in this together. &hearts;</p>
+ </p>
+  </div>
+</div>
+
+<!-- SERVICES MODAL -->
+<div id="servicesModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeServicesModal()">&times;</span>
+    <h2>Our Services</h2>
+    <p class="services-intro">We offer supportive tools and resources to help you manage PCOS.</p>
+    
+    <!-- 👇 Scrollable part starts here -->
+    <div class="services-scroll-area">
+      <div class="services-container">
+        <div class="service-card">
+          <h3>Symptom Tracker</h3>
+          <p>Monitor your daily symptoms, cycle, and emotional well-being.</p>
+        </div>
+        <div class="service-card">
+          <h3>Diet Recommendations</h3>
+          <p>Get nutrition advice to manage insulin levels and reduce symptoms.</p>
+        </div>
+        <div class="service-card">
+          <h3>PCOS-Friendly Workouts</h3>
+          <p>Learn the best exercises for hormonal balance and weight management.</p>
+        </div>
+        <div class="service-card">
+          <h3>Mental Health Support</h3>
+          <p>Find tips for managing stress, anxiety, and mood swings related to PCOS.</p>
+        </div>
+        <div class="service-card">
+          <h3>Find a Specialist</h3>
+          <p>Locate healthcare professionals who understand and treat PCOS effectively.</p>
+        </div>
+      </div>
+    </div>
+ 
+
+  </div>
+</div>
+
+
+<!-- LOGIN -->
+
+<div class="auth-box" id="authBox">
+    <h3>Sign Up</h3>
+    <form id="signupForm">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p class="login-text">Already have an account? <a href="#">Login</a></p>
+  </div>
+  
+
+  <!-- HAMBURGER -->
+  
+
+  <div class="container" onclick="toggleMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+
+</br>
+   
+
+<div class="info-box">
+    <img src="pcosbest.jpg" alt="PCOS Awareness" class="info-image">
+    <div class="info-text">
+      <h4>Understanding PCOS</h4>
+      <p>PCOS (Polycystic Ovary Syndrome) is a common hormonal disorder that affects people with ovaries, often during their reproductive years. It is characterized by irregular menstrual cycles, high levels of male hormones (androgens), and the development of cysts in the ovaries. Symptoms can include irregular periods, acne, excessive hair growth (hirsutism), and weight gain. PCOS can also affect fertility, as it may prevent the ovaries from releasing eggs regularly. The exact cause of PCOS is not fully understood, but it is believed to be influenced by genetic and environmental factors. Insulin resistance is common in people with PCOS, which can lead to increased levels of insulin and further hormone imbalances. Managing PCOS typically involves lifestyle changes, such as a healthy diet and regular exercise, along with medical treatments like hormonal contraceptives, anti-androgens, and medications to manage insulin levels.</p>
+    </div>
+  </div>
+  
+ 
+  
+  
+
+  <div id="sidebar" class="sidebar">
+    <ul>
+        <li><strong>Health Tools</strong></li>
+        <li><a href="symptom_tracker.html">Symptom Tracker</a></li>
+        <li><a href="period_calendar.html">Period Calendar</a></li>
+
+        <li><strong>Wellness Plans</strong></li>
+        <li><a href="Diet_Plans.html">Diet Plans</a></li>
+        <li><a href="Workout_Routines.html">Workout Routines</a></li>
+      
+        <li><strong>Resources</strong></li>
+        <li><a href="Blog.html">Blog</a></li>
+      
+      
+      <li><strong>User</strong></li>
+      <li><a href="My_Profile.html">My Profile</a></li>
+     
+    </ul>
+  </div>
+
+  
+
+
+  
+
+
+  <!-- Details -->
+  <section class="pcos-info">
+    <h2>Why PCOS Awareness Matters</h2>
+    <p>
+      Polycystic Ovary Syndrome (PCOS) is one of the most common hormonal disorders affecting women of reproductive age.
+      It impacts <strong>1 in 10 women worldwide</strong> — and many remain undiagnosed for years.
+    </p>
+    <p>
+      PCOS can cause irregular periods, acne, weight gain, excessive hair growth, and even infertility. It also increases the risk of developing conditions like <strong>type 2 diabetes, heart disease, and depression</strong>.
+    </p>
+    <p>
+      Raising awareness and providing accessible tools for early detection and lifestyle management is crucial. Our goal is to support women with PCOS by providing knowledge, resources, and a community to thrive in.
+    </p>
+  </section>
+
+
+  <section class="info-blocks">
+    <div class="info-block">
+      <h3>What is PCOS?</h3>
+      <p>PCOS is a common hormonal condition that affects many women and can impact reproductive health.</p>
+    </div>
+    
+    <div class="info-block">
+      <h3>Symptoms of PCOS</h3>
+      <p>Irregular periods, weight gain, acne, and excessive hair growth are some common symptoms.</p>
+    </div>
+  
+    <div class="info-block">
+      <h3>Managing PCOS</h3>
+      <p>Healthy lifestyle choices, diet, and medical guidance can help manage and alleviate symptoms.</p>
+    </div>
+  </section>
+  
+  <section class="testimonials">
+    <h2>Success Stories</h2>
+    <div class="testimonial">
+      <p>"Adopting a balanced lifestyle and following a proper diet helped me manage my PCOS symptoms naturally. This platform was a huge help!"</p>
+      <h4>- Aanya, 25</h4>
+    </div>
+    <div class="testimonial">
+      <p>"I finally understood my body better through the tools and content here. It's empowering!"</p>
+      <h4>- Neha, 30</h4>
+    </div>
+  </section>
+
+  
+
+<section class="faqs">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq">
+    <h4>Can PCOS be cured?</h4>
+    <p>There is no cure, but symptoms can be managed effectively through lifestyle changes and medical care.</p>
+  </div>
+  <div class="faq">
+    <h4>Does everyone with PCOS have cysts?</h4>
+    <p>No, not everyone with PCOS develops ovarian cysts. The name is a bit misleading!</p>
+  </div>
+</section>
+
+  
+
+<section class="newsletter">
+  <h2>Stay Updated</h2>
+  <p>Subscribe to our newsletter for PCOS tips, diet plans, and more.</p>
+  <form>
+    <input type="email" placeholder="Enter your email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About PCOS Portal</h3>
+      <p>We aim to educate, empower, and support individuals dealing with PCOS through knowledge, tools, and community.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact" id="contact">
+      <h4>Contact Us</h4>
+      <p>Email: support@pcosportal.com</p>
+      <p>Follow us: 
+        <a href="#">Instagram:@pcos_care</a> | 
+        <a href="#">Twitter</a> | 
+        <a href="#">Facebook</a>
+      </p>
+    </div>
+    
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 PCOS Portal. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

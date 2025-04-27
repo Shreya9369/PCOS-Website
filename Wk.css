@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #ff85a2, #ffc0cb);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Workout Sections (Base Style for All) */
+  .workout,
+  .BriskWalk,
+  .Training,
+  .pilates {
+    padding: 2.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fdfdfd;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .workout:hover,
+  .BriskWalk:hover,
+  .Training:hover,
+  .pilates:hover {
+    background-color: #f0e6eb; /* Slightly darker background on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft hover shadow */
+  }
+  
+  .workout h2,
+  .BriskWalk h2,
+  .Training h2,
+  .pilates h2 {
+    margin-bottom: 1rem;
+    color: #d6336c;
+    font-size: 1.8rem;
+  }
+  
+  /* Image Styling */
+  .workout img,
+  .BriskWalk img,
+  .Training img,
+  .pilates img {
+    height: 250px;
+    width: auto;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .workout img:hover,
+  .BriskWalk img:hover,
+  .Training img:hover,
+  .pilates img:hover {
+    transform: scale(1.05);
+  }
+
+
+  .summary {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background-color: #d69ca7;
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+  }
+  
+  
+  /* Footer */
+  footer {
+    background-color: #ffc0cb;
+    color: black;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 0.95rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+
+  .intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffe0ec; /* soft pink */
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .intro h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #c2185b;
+  }
+  
+  .intro p {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #444;
+  }
+  
+  .scroll-down {
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #c2185b;
+  }
+  
+  .arrow {
+    font-size: 2em;
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); 
+    }
+    40% {
+      transform: translateY(10px); 
+    }
+    60% {
+      transform: translateY(5px); 
+    }
+  }
+  

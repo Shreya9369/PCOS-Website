@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 350px;
+    }
+
+    .profile-container h2 {
+      margin-bottom: 15px;
+      color: #f8b500;
+      font-size: 26px;
+    }
+
+    .profile-container p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Welcome, <span id="userName" class="highlight"></span> 👋</h2>
+    <p>Email: <span id="userEmail" class="highlight"></span></p>
+  </div>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("pcosUser"));
+    if (user) {
+      document.getElementById("userName").innerText = user.name;
+      document.getElementById("userEmail").innerText = user.email;
+    } else {
+      window.location.href = "index.html"; // or your signup page
+    }
+  </script>
+</body>
+</html>
