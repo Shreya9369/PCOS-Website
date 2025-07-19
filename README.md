@@ -67,4 +67,4 @@ A user-friendly website to spread awareness about **Polycystic Ovary Syndrome (P
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Shreya9369/YOLOv7-Garbage-Face-Detection.git
+   git clone https://github.com/Shreya9369/PCOS-Website.git
